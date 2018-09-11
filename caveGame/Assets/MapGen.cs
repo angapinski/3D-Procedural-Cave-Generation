@@ -6,7 +6,7 @@ public class MapGen : MonoBehaviour {
 
     public int width;
     public int height;
-    public float squareSize;
+    public float squareSize = 1;
 
     public string mapSeed;
     public bool useRandomMapSeed;
@@ -112,7 +112,7 @@ public class MapGen : MonoBehaviour {
 
 
     void OnDrawGizmos()
-    {
+    { /*
         if (map != null)
         {
             for (int x = 0; x < width; x++)
@@ -124,7 +124,6 @@ public class MapGen : MonoBehaviour {
                     Gizmos.DrawCube(pos, Vector3.one);
                 }
             }
-        }
+        }*/
     }
-
 }
