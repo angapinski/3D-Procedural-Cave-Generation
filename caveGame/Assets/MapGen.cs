@@ -24,11 +24,15 @@ public class MapGen : MonoBehaviour
 
     int[,] map;
 
+    float timeSinceLastGen = 0f;
+
     void Start()
     {
         groundPlane = GameObject.Find("GroundPlane");
         roofPlane = GameObject.Find("RoofPlane");
         mainCamera = GameObject.Find("RigidBodyFPSController");
+
+        //InvokeRepeating("GenerateMap", 2.0f, 2.0f);
         GenerateMap();
     }
 
@@ -36,9 +40,10 @@ public class MapGen : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GenerateMap();
+            //GenerateMap();
         }
     }
+
 
     void GenerateMap()
     {

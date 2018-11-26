@@ -37,7 +37,7 @@ public class Shooter : MonoBehaviour {
             TimeSinceLastShot = 0;
             //GameObject bullet = Instantiate<GameObject>(Bullet, transform.position + transform.up / 2 + transform.right / 2 + transform.forward * 2, Quaternion.identity);
             //bullet.GetComponent<Rigidbody>().velocity = myCamera.transform.forward * 50;
-            Fire();
+            //Fire();
             //Debug.Log(Camera.main.transform.forward);
         }
 		

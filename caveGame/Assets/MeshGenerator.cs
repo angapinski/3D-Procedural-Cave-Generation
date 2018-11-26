@@ -177,7 +177,7 @@ public class MeshGenerator : MonoBehaviour {
         int randomTorchLimit = 0;
         System.Random pseudoRandom = new System.Random(1);
 
-        for(int i = 0; i < wallVertices.Count; i+=4)
+        for(int i = 0; i < wallVertices.Count - 4; i+=4)
         {
             if(verticesSinceLastTorch == randomTorchLimit)
             {
